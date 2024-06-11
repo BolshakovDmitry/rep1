@@ -1,0 +1,131 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 3000px;
+  margin: 0 auto;
+  display: flex;
+}
+.chat{
+  background-color: rgb(255, 255, 254);
+  height: 100vh;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 13px;
+}
+.allChatsLine{
+  flex-basis: 320px;
+  height: 100vh;
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100vh;
+  background: #f5f2f2;
+  padding-top: 10px;
+}
+.profile{
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 13px;
+  margin-bottom: 5px;
+  align-self: flex-end;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+form {
+  position: relative;
+  width: 290px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+input, button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+input {
+  width: 100%;
+  height: 42px;
+  background: #ffffff;
+  padding-left: 15px;
+}
+button {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #4128ff;
+  cursor: pointer;
+}
+button:before {
+  content: "\f105";
+  font-family: FontAwesome;
+  color: #F9F0DA;
+  font-size: 20px;
+  font-weight: bold;
+}
+.linebreak{
+width: 290px;
+height: 1px;
+background: #b5aeae;
+}
+.Chat__item{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 290px;
+  justify-content: space-between;
+}
+.chat__itemWrapper1{
+  margin-left: 10px;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  word-wrap: break-word;
+}
+.chat__itemPic{
+  width: 47px;
+  height: 47px;
+  border-radius: 25px;
+  background: #acacad;
+}
+.chat__itemName{
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 13px;
+  margin-bottom: 5px;
+}
+.chat__itemMessage{
+font-family: Inter;
+font-size: 12px;
+font-weight: 500;
+line-height: 15px;
+}
+.chat__itemWrapper2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+}
