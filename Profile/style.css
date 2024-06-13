@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.profileContainer {
+  max-width: 2000px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; 
+  position: relative;
+}
+.profileHeader{
+ font-family: Inter;
+ font-size: 16px;
+ font-weight: 600;
+ line-height: 16px;
+ text-align: center;
+}
+.profileHeader_photo{
+  width: 20%;
+  border-radius: 50%;
+}
+.profileHeader__tytle{
+margin-top: 10px;
+}
+.profileInfo{
+  
+}
+.profileInfo__field{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 250px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.profileInfo__text{
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 13px;
+  text-align: left;
+  color: #1E1E1E;  
+}
+.profileInfo__data{
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 13px;
+  text-align: right;
+  color: #999999;
+}
+.linebreak{
+  height: 1px;
+  border: 1px solid #ebe9e9
+}
+.buttons{
+  display: flex;
+  flex-direction: column;
+}
+.button{
+  margin-right: auto;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 13px;
+  width: 280px;
+  height: 37px;
+  color: #3369F3; 
+  text-decoration: none; 
+  background-color: #ffffff;
+  user-select: none; 
+  outline: none; 
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.button:last-child{
+  color:#ff0000
+}
+.button:last-child:hover{
+  background-color: #ff0000; 
+}
+
+.button:hover { color: #ffffff; background-color: #3369F3; } 
+.button:active { background-color: #cf0cfb; } 
+
+.buttons:last-child {
+  margin-bottom: 30px;
+}
+
+.button2{
+  position: absolute;
+  transform: translateX(-600%); 
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 13px;
+  width: 100px;
+  height: 50px;
+  color: #ffffff; 
+  text-decoration: none; 
+  background-color: #3369F3;
+  user-select: none; 
+  outline: none; 
+  border: none;
+  border-radius: 30px;
+}
+
+
+
+
+
