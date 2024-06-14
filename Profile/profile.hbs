@@ -1,0 +1,30 @@
+<div class="profileContainer">
+
+     <div class="profileHeader">
+       <img src="photo.png" class="profileHeader_photo">
+      <div class="profileHeader__name">{{profileName}}</div>
+    </div>
+
+  <div class="profileInfo">
+
+    {{#each fields}}
+    <div class="profileInfo__insertfiels">
+      <div class="profileInfo__field">
+        <input class= "profileInfo__text" type="{{type}}" placeholder="{{profileField}}" />
+        <div class="profileInfo__data">{{placeholderField}}</div>
+      </div>
+    </div>
+    <div class="linebreak"></div>
+    {{/each}}
+
+    </div>
+    
+    <div class="buttons">
+      {{#each buttons}}
+      <input type="button" class="{{class}}" value="{{text}}">
+      {{/each}}
+    </div>
+
+  
+
+</div>

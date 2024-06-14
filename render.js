@@ -4,7 +4,7 @@ const path = require('path');
 
 // Регистрация и загрузка частичных шаблонов
 const loadAndRegisterPartials = () => {
-  const modules = ['Registration', 'Login'];
+  const modules = ['Registration', 'Login', 'Profile'];
 
   modules.forEach((module) => {
     const filePath = path.join(
@@ -30,7 +30,7 @@ const generateHTMLPages = () => {
     fs.readFileSync(baseTemplatePath, 'utf-8')
   );
 
-  const modules = ['Registration', 'Login'];
+  const modules = ['Registration', 'Login', 'Profile'];
 
   modules.forEach((module) => {
     const contextPath = path.join(__dirname, module, 'context.js');

@@ -113,10 +113,19 @@ background: #b5aeae;
   align-items: center;
   justify-content: space-between;
 }
+.allChats__itemUnreadMes{
+  text-align: center;
+  color: #ffffff;
+  padding: 1px;
+  background-color: #533cff;
+  width: 20px;
+  height: 20px;
+  border-radius: 12px;
+}
 /*------------------------------------------------Правая сторона----------------------------------------------------------------------*/
 
 .chat{
-  background-color: rgb(255, 255, 254);
+  background-color: #ffffff;
   height: 98vh;
   flex-grow: 1;
   flex-shrink: 1;
