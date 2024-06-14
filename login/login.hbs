@@ -1,0 +1,16 @@
+<div class="parent">
+  <div class="login">
+    <div class="login__enter">{{title}}</div>
+    {{#each fields}}
+    <div class="login__insertfiels">
+      <div class="login__greyPlaceholder">{{label}}</div>
+      <input type="{{type}}" class="login__textholder" value="{{value}}">
+      <div class="login__linebreak"></div>
+    </div>
+    {{/each}}
+    <div class="buttons">
+      <input type="button" class="AuthButton" value="{{authButton}}">
+      <input type="button" class="NoAccButton" value="{{noAccButton}}">
+    </div>
+  </div>
+</div>
