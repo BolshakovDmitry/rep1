@@ -1,17 +1,17 @@
 module.exports = {
  
   fields: [
-    { allChatsName: 'Почта', placeholderField: 'pochta@mail.ru' },
-    { profileField: 'Логин', type: 'text', placeholderField: 'd_bolshakov' },
-    { profileField: 'Имя', type: 'text', placeholderField: 'Дмитрий' },
-    { profileField: 'Фамилия', type: 'text', placeholderField: 'Большаков' },
-    { profileField: 'Имя в чате', type: 'text', placeholderField: 'DM' },
-    { profileField: 'телефон', type: 'tel', placeholderField: '+7 (960) 137 40 42' },
+    { allChatsName: 'Дмитрий', allChatsMessage: 'тестовое сообщение 1',allChatsTime: '10:49',allChatsUnreadMes: '1' },
+    { allChatsName: 'Андрей', allChatsMessage: 'тестовое сообщение 2',allChatsTime: '10:50',allChatsUnreadMes: '2' },
+    { allChatsName: 'Слава', allChatsMessage: 'тестовое сообщение 3',allChatsTime: '10:50',allChatsUnreadMes: '2' },
+    { allChatsName: 'Егор', allChatsMessage: 'тестовое сообщение 4',allChatsTime: '10:50',allChatsUnreadMes: '1' },
+    { allChatsName: 'Петр', allChatsMessage: 'тестовое сообщение 5',allChatsTime: '10:50',allChatsUnreadMes: '2' },
+    { allChatsName: 'Иван', allChatsMessage: 'тестовое сообщение 6',allChatsTime: '10:50',allChatsUnreadMes: '5' },
   ],
-  buttons: [
-    { class: 'button', text: 'Изменить данные?' },
-    { class: 'button', text: 'Изменить пароль?' },
-    { class: 'buttonExit', text: 'Выйти?' },
-    { class: 'button2', text: 'Назад' }
+  chatData: [
+    { chatName: 'Вадим', chatMessage: 'Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с пленкой. Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.',
+      chatTime: '11:56', chatReply: 'Круто 12:00'
+    }
   ],
+
 };

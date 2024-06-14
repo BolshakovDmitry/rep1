@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Регистрация',
   fields: [
-    { label: 'Почта', type: 'text', value: 'pochta@mail.ru' },
+    { label: 'Почта', type: 'text', value: '10:50' },
     { label: 'Логин', type: 'text', value: 'd_bolshakov' },
     { label: 'Имя', type: 'text', value: 'Дмитрий' },
     { label: 'Фамилия', type: 'text', value: 'Большаков' },

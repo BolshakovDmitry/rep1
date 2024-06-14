@@ -1,7 +1,7 @@
 module.exports = {
   profyletitle: 'Иван',
   fields: [
-    { profileField: 'Почта', type: 'text', placeholderField: 'pochta@mail.ru' },
+    { profileField: 'Почта', type: 'text', placeholderField: '10:50' },
     { profileField: 'Логин', type: 'text', placeholderField: 'd_bolshakov' },
     { profileField: 'Имя', type: 'text', placeholderField: 'Дмитрий' },
     { profileField: 'Фамилия', type: 'text', placeholderField: 'Большаков' },

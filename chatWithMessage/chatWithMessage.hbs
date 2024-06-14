@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <div class="container">
 
@@ -12,180 +13,70 @@
 
     <div class="linebreak"></div>
 
+    {{#each fields}}
     <div class="allChats__item">
-
         <div class="allChats__itemPic"></div>  
           <div class="allChats__itemWrapper1">
-            <div class="allChats__itemName">Андрей</div>
-            <div class="allChats__itemMessage">Привет, тестовое сообщение тут</div>
+            <div class="allChats__itemName">{{allChatsName}}</div>
+            <div class="allChats__itemMessage">{{allChatsMessage}}</div>
           </div>
 
           <div class="allChats__itemWrapper2">
-            <div class="allChats__itemTime">10:49</div>
-            <div class="allChats__itemUnreadMes">2</div>
+            <div class="allChats__itemTime">{{allChatsTime}}9</div>
+            <div class="allChats__itemUnreadMes">{{allChatsUnreadMes}}</div>
           </div>
-            
-        </div>
-
+    </div>
     <div class="linebreak"></div>
-        
-        <div class="allChats__item">
+    {{/each}}    
 
-          <div class="allChats__itemPic"></div>
-            
-          <div class="allChats__itemWrapper1">
-            <div class="allChats__itemName">Саша</div>
-            <div class="allChats__itemMessage">Привет, тестовое сообщение тут</div>
-          </div>
-
-          <div class="allChats__itemWrapper2">
-            <div class="allChats__itemTime">10:49</div>
-            <div class="allChats__itemUnreadMes">2</div>
-          </div>
-
-        </div>
-
-        <div class="linebreak"></div>
-
-        <div class="allChats__item">
-
-          <div class="allChats__itemPic"></div>
-            
-          <div class="allChats__itemWrapper1">
-            <div class="allChats__itemName">Леха</div>
-            <div class="allChats__itemMessage">Привет, тестовое сообщение тут</div>
-          </div>
-
-          <div class="allChats__itemWrapper2">
-            <div class="allChats__itemTime">10:49</div>
-            <div class="allChats__itemUnreadMes">2</div>
-          </div>
-
-        </div>
-
-        <div class="linebreak"></div>
-
-        <div class="allChats__item">
-
-          <div class="allChats__itemPic"></div>
-            
-          <div class="allChats__itemWrapper1">
-            <div class="allChats__itemName">Андрей</div>
-            <div class="allChats__itemMessage">Привет, тестовое сообщение тут</div>
-          </div>
-
-          <div class="allChats__itemWrapper2">
-            <div class="allChats__itemTime">10:49</div>
-            <div class="allChats__itemUnreadMes">2</div>
-          </div>
-
-        </div>
-
-        <div class="linebreak"></div>
-
-        <div class="allChats__item">
-
-          <div class="allChats__itemPic"></div>
-            
-          <div class="allChats__itemWrapper1">
-            <div class="allChats__itemName">Дмитрий</div>
-            <div class="allChats__itemMessage">Привет, тестовое сообщение тут</div>
-          </div>
-
-          <div class="allChats__itemWrapper2">
-            <div class="allChats__itemTime">10:49</div>
-            <div class="allChats__itemUnreadMes">2</div>
-          </div>
-
-        </div>
-
-        <div class="linebreak"></div>
-
-        <div class="allChats__item">
-
-          <div class="allChats__itemPic"></div>
-            
-          <div class="allChats__itemWrapper1">
-            <div class="allChats__itemName">Егор</div>
-            <div class="allChats__itemMessage">Привет, тестовое сообщение тут</div>
-          </div>
-
-          <div class="allChats__itemWrapper2">
-            <div class="allChats__itemTime">10:49</div>
-            <div class="allChats__itemUnreadMes">2</div>
-          </div>
-
-        </div>
-
-        <div class="linebreak"></div>
-
-        <div class="allChats__item">
-
-          <div class="allChats__itemPic"></div>
-            
-          <div class="allChats__itemWrapper1">
-            <div class="allChats__itemName">Андрей</div>
-            <div class="allChats__itemMessage">Привет, тестовое сообщение тут</div>
-          </div>
-
-          <div class="allChats__itemWrapper2">
-            <div class="allChats__itemTime">10:49</div>
-            <div class="allChats__itemUnreadMes">2</div>
-          </div>
-
-        </div>
-
-        <div class="linebreak"></div>
-      
-        <div class="allChats__item">
-
-          <div class="allChats__itemPic"></div>
-            
-          <div class="allChats__itemWrapper1">
-            <div class="allChats__itemName">Андрей</div>
-            <div class="allChats__itemMessage">Привет, тестовое сообщение тут</div>
-          </div>
-
-          <div class="allChats__itemWrapper2">
-            <div class="allChats__itemTime">10:49</div>
-            <div class="allChats__itemUnreadMes">2</div>
-          </div>
-
-        </div>
-      </div>
+    
+    
+</div>
 
  <div class="chat">
+
+      <div class="chatTytleContainer">
         
         <div class="chat__tytle">
 
           <div class="chat__tytle__left">
             <div class="chat__itemPic"></div>
-            <div class="chat__itemName">Вадим</div>
+            {{#each chatData}}
+            <div class="chat__itemName">{{chatName}}</div>
+            {{/each}}   
           </div>
 
           <div class="dots">•••</div>
 
+        </div>
+      
+      <div class="chat__linebreak"></div>
+
     </div>
 
-        <div class="chat__linebreak"></div>
+        
 
     <div class="chat__container">
 
         <div class="greyText">19 июня</div>
 
+        {{#each chatData}}
         <div class="chat__message">
-          <div class="chat__messageText">Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с пленкой.
-
-            Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.</div>
-          <div class="chat__time">11:56</div>
+          <div class="chat__messageText">{{chatMessage}}</div>
+          <div class="chat__time">{{chatTime}}</div>
         </div>
+         {{/each}}
 
-        <div class="chat__replies">Круто 12:00</div>
+        {{#each chatData}}
+        <div class="chat__replies">{{chatReply}}</div>
+        {{/each}}   
     </div>
 
-        <div class="chat__linebreak"></div>
+        
         
     <div class="chat__bottom">
+      
+        <div class="chat__linebreak"></div>
 
         <form class="form1">
           <input class="imput2" type="text" placeholder="Поиск">
