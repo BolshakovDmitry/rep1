@@ -9,8 +9,9 @@
     </div>
     {{/each}}
     <div class="buttons">
-      <input type="button" class="AuthButton" value="{{authButton}}">
-      <input type="button" class="NoAccButton" value="{{noAccButton}}">
+      {{#each buttons}}
+      <input type="button" class="{{class}}" value="{{text}}">
+      {{/each}}
     </div>
   </div>
 </div>
